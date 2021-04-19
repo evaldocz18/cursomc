@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.evaldo.cursomc.domain.Categoria;
 
 @RestController
-@RequestMapping(value = "/categorias")
+@RequestMapping(value="/categorias")
 public class CategoriaResource {
-
+	
 	@RequestMapping(method=RequestMethod.GET)
 	public List<Categoria> listar() {
 		
@@ -25,5 +25,4 @@ public class CategoriaResource {
 		
 		return lista;
 	}
-	
 }
