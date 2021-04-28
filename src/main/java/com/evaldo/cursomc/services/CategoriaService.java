@@ -16,6 +16,7 @@ import com.evaldo.cursomc.repositories.CategoriaRepository;
 import com.evaldo.cursomc.services.exceptions.DataIntegrityException;
 import com.evaldo.cursomc.services.exceptions.ObjectNotFoundException;
 
+
 @Service
 public class CategoriaService {
 
