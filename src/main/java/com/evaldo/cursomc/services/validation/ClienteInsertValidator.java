@@ -6,13 +6,19 @@ import java.util.List;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.evaldo.cursomc.domain.enums.TipoCliente;
 import com.evaldo.cursomc.dto.ClienteNewDTO;
+import com.evaldo.cursomc.repositories.ClienteRepository;
 import com.evaldo.cursomc.resources.exception.FieldMessage;
 import com.evaldo.cursomc.services.validation.utils.BR;
 
 public class ClienteInsertValidator implements ConstraintValidator<ClienteInsert, ClienteNewDTO> {
 
+	@Autowired
+	private ClienteRepository repo;
+	
 	@Override
 	public void initialize(ClienteInsert ann) {
 	}
