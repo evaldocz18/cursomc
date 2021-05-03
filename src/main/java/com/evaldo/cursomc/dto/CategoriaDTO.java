@@ -1,6 +1,7 @@
 package com.evaldo.cursomc.dto;
 
 import java.io.Serializable;
+
 import javax.validation.constraints.NotEmpty;
 
 import org.hibernate.validator.constraints.Length;

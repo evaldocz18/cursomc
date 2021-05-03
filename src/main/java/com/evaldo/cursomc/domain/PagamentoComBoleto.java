@@ -3,9 +3,10 @@ package com.evaldo.cursomc.domain;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import com.fasterxml.jackson.annotation.JsonTypeName;
+
 import com.evaldo.cursomc.domain.enums.EstadoPagamento;
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonTypeName;
 
 @Entity
 @JsonTypeName("pagamentoComBoleto")
